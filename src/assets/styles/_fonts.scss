@@ -1,0 +1,59 @@
+/* stylelint-disable import-notation */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* stylelint-enable */
+
+@font-face {
+  font-family: apercu;
+  font-style: normal;
+  font-weight: 300;
+  src: local('Apercu'), url('../fonts/apercu/Apercu\ Light.otf');
+}
+
+@font-face {
+  font-family: apercu;
+  font-style: italic;
+  font-weight: 300;
+  src: local('Apercu'), url('../fonts/apercu/Apercu\ Light\ Italic.otf');
+}
+
+@font-face {
+  font-family: apercu;
+  font-style: normal;
+  font-weight: 500;
+  src: local('Apercu'), url('../fonts/apercu/Apercu\ Medium.otf');
+}
+
+@font-face {
+  font-family: apercu;
+  font-style: italic;
+  font-weight: 500;
+  src: local('Apercu'), url('../fonts/apercu/Apercu\ Medium\ Italic.otf');
+}
+
+@font-face {
+  font-family: apercu;
+  font-style: normal;
+  font-weight: 600;
+  src: local('Apercu'), url('../fonts/apercu/Apercu\ Regular.otf');
+}
+
+@font-face {
+  font-family: apercu;
+  font-style: italic;
+  font-weight: 600;
+  src: local('Apercu'), url('../fonts/apercu/Apercu\ Regular\ Italic.otf');
+}
+
+@font-face {
+  font-family: apercu;
+  font-style: normal;
+  font-weight: 700;
+  src: local('Apercu'), url('../fonts/apercu/Apercu\ Bold.otf');
+}
+
+@font-face {
+  font-family: apercu;
+  font-style: italic;
+  font-weight: 700;
+  src: local('Apercu'), url('../fonts/apercu/Apercu\ Bold\ Italic.otf');
+}
