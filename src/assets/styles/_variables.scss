@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+$base-font-size: 14px;
+$base-font-family: 'apercu', sans-serif;
+$secondary-font-family: 'Inter', sans-serif;
+
+// spacing
+$spacer-1: 0.25rem !default;
+$spacer-2: 0.5rem !default;
+$spacer-3: 0.75rem !default;
+$spacer-4: 1rem !default;
+$spacer-5: 1.5rem !default;
+$spacer-6: 2rem !default;
+$spacer-7: 3rem !default;
+$spacer-8: 4rem !default;
+$spacer-9: 6rem !default;
+$spacer-10: 10rem !default;
+
+// fonts (major third scale)
+$font-size-smaller: 0.64rem !default;
+$font-size-small: 0.8rem !default;
+$font-size-normal: 1rem !default;
+$font-size-medium: 1.25rem !default;
+$font-size-large: 1.563rem !default;
+$font-size-larger: 1.953rem !default;
+
+// layers
+$top-layer: 99;
+$fourth-level-layer: 4;
+$third-level-layer: 3;
+$second-level-layer: 2;
+$first-level-layer: 1;
+$neutral-layer: 0;
+$bottom-layer: -1;
+
+// breakpoints
+$breakpoint-desktop-sm: 1024px;
+$breakpoint-tablet: 768px;
+$breakpoint-mobile: 425px;
