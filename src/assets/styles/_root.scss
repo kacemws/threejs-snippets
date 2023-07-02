@@ -1,15 +1,22 @@
 @use 'variables' as *;
 
-html {
-  font-family: $base-font-family;
-  font-size: $base-font-size;
-  box-sizing: border-box;
-}
-
 *,
 *::before,
 *::after {
   box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: $background-color;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  color: $text-color;
+  box-sizing: border-box;
 }
 
 a,
