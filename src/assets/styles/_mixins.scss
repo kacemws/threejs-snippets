@@ -12,7 +12,7 @@
   }
 }
 
-@mixin desktopSm {
+@mixin desktop-sm {
   @media screen and (max-width: $breakpoint-desktop-sm) {
     @content;
   }
