@@ -1,0 +1,36 @@
+name: Code Quality Checks
+on:
+  push:
+    branches-ignore:
+      - '*'
+  pull_request:
+    branches-ignore:
+      - '*'
+
+jobs:
+  code_quality_checks:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 18
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Run ESLint
+        run: npx eslint .
+
+      - name: Run Stylelint
+        run: npx stylelint "**/*.css"
+
+      - name: Build Next.js
+        run: npm run build
+
+      - name: Run Next.js Linting
+        run: npx next lint
