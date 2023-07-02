@@ -21,13 +21,13 @@ jobs:
           node-version: 18
 
       - name: Install Dependencies
-        run: npm install
+        run: yarn
 
       - name: Run ESLint
         run: npx eslint .
 
       - name: Run Stylelint
-        run: npx stylelint "**/*.css"
+        run: npx stylelint "**/*.{css,scss}"
 
       - name: Build Next.js
         run: npm run build
