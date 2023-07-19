@@ -1,6 +1,7 @@
 import { useTranslations } from 'next-intl';
 import Text from '@/app/components/text/Text';
 import Title from '@/app/components/text/Title';
+/** @type {readonly [key: string]: string;} */
 import styles from '@/assets/styles/modules/_home.module.scss';
 
 export default function Home() {
