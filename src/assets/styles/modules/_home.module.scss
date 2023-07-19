@@ -1,0 +1,41 @@
+@use '../variables' as *;
+
+.home-page-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+
+  .home-page-background {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    background-image: radial-gradient(#363737 1px, transparent 1px),
+      radial-gradient(#363737 1px, transparent 1px);
+    background-size: 50px 50px;
+    background-position: 0 0, 25px 25px;
+    z-index: $neutral-layer;
+  }
+
+  .home-page-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: $spacer-4;
+    height: 100%;
+    width: 100%;
+    padding: 0 $spacer-5;
+    background: radial-gradient(
+      circle,
+      rgba($background-color, 0.045) -45%,
+      $background-color 65%
+    );
+    text-align: center;
+    z-index: $neutral-layer;
+  }
+}
