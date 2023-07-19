@@ -17,6 +17,7 @@
     "eslint-config-next": "13.4.7",
     "framer-motion": "^10.12.18",
     "next": "13.4.7",
+    "next-intl": "3.0.0-beta.9",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "typescript": "5.1.6"
