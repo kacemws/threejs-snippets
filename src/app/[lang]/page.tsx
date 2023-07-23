@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */
-
 import { useTranslations } from 'next-intl';
 import Text from '@/app/components/text/Text';
 import Title from '@/app/components/text/Title';
