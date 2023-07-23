@@ -2,9 +2,6 @@
 module.exports = {
   root: true,
   parser: '@typescript-eslint/parser',
-  rules: {
-    '@typescript-eslint/no-unsafe-assignment': 'warn',
-  },
   plugins: ['@typescript-eslint'],
   extends: ['eslint:recommended', 'next/core-web-vitals', 'prettier'],
   overrides: [
