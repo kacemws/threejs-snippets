@@ -9,15 +9,24 @@
   width: 100%;
 
   .home-page-background {
-    position: absolute;
-    inset: 0;
-    height: 100%;
-    width: 100%;
-    background-image: radial-gradient(#363737 1px, transparent 1px),
-      radial-gradient(#363737 1px, transparent 1px);
-    background-size: 50px 50px;
-    background-position: 0 0, 25px 25px;
-    z-index: $neutral-layer;
+    &,
+    &::before {
+      position: absolute;
+      inset: 0;
+      height: 100%;
+      width: 100%;
+      background-image: radial-gradient(#363737 1px, transparent 1px),
+        radial-gradient(#363737 1px, transparent 1px);
+      background-size: 50px 50px;
+      background-position: 0 0, 25px 25px;
+      z-index: $neutral-layer;
+    }
+
+    &::before {
+      content: '';
+      background-image: radial-gradient(#fefefe 1px, transparent 1px);
+      animation: lighten-up 10s ease-in-out infinite;
+    }
   }
 
   .home-page-content {
@@ -32,10 +41,21 @@
     padding: 0 $spacer-5;
     background: radial-gradient(
       circle,
-      rgba($background-color, 0.045) -45%,
-      $background-color 65%
+      rgba($background-color, 0.045) -50%,
+      $background-color 45%
     );
     text-align: center;
     z-index: $neutral-layer;
+  }
+}
+
+@keyframes lighten-up {
+  0%,
+  100% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
   }
 }
